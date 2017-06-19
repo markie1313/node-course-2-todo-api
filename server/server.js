@@ -80,8 +80,8 @@ app.delete('/todos/:id', (req, res) => {
           }
             // console.log(req.params);
             // console.log('Todos', todo);
-            res.send(todo);//send the object of 'todo' and see the magic
-
+            // res.send(todo);//send the object of 'todo' and see the magic
+            res.send({todo});
         }).catch((e) => res.status(400).send());
 });
 
